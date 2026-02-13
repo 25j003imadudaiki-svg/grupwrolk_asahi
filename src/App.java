@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class App {
     static Scanner sc=new Scanner(System.in,"Shift-JIS");
     public static void main(String[] args) throws Exception {
+        // login();
         home();
+
     }
     public static void home(){
         boolean w = true;
