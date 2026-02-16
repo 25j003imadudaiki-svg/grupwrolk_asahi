@@ -76,7 +76,7 @@ public class Student{
     public String toCSV() {
         return studentID + "," + name + "," + gender + "," + age + "," + byear + "," + 
                email + "," + call + "," + address + "," + cose + "," + level + "," + 
-               point + "," + credit_number + "," + isWithdrawn;
+               credit_number + "," + point + "," + isWithdrawn;
     }
     
 }

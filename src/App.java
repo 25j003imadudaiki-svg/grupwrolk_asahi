@@ -5,6 +5,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         // login();
         home();
+        Load ld=new Load();
+        ld.load();
 
     }
     public static void home(){
@@ -35,7 +37,7 @@ public class App {
                 Sales_management s= new Sales_management();
                 s.sales_menu();
             }else if(set==5){
-                boolean s=true;
+                w=true;
                 
             }else{
                 System.err.println("1~5の数字を入力してください");

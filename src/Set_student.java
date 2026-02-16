@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Set_student {
-    public static ArrayList<Student> studentList = new ArrayList<>();
+    public static ArrayList<Student> studentList = new ArrayList<Student>();
     private Scanner sc =new Scanner(System.in,"Shift-JIS");
     public Set_student(){
 
@@ -351,7 +351,7 @@ public class Set_student {
         int age = 18;
         int inpoint=0;
 
-        Student newst=new Student(ne, gdr, stID, cl, age, cnb, em, lv, ads, by, cs, inpoint);
+        Student newst=new Student(gdr,lv,stID,ne,age,cl,em,cs,ads,by,cnb,inpoint);
 
         studentList.add(newst);
         try (PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(new FileOutputStream("student.txt", true))))) {
