@@ -1,9 +1,11 @@
 import java.util.Scanner;
 
 public class App {
-    static Scanner sc=new Scanner(System.in,"Shift-JIS");
+    static final Scanner sc=new Scanner(System.in,"Shift-JIS");
     public static void main(String[] args) throws Exception {
+        // login();
         home();
+
     }
     public static void home(){
         boolean w = true;
@@ -24,6 +26,8 @@ public class App {
                 Set_student ss=new Set_student();
                 ss.set_menu();
             }else if(set==2){
+                BookLesson bookLesson = new BookLesson(set, inpuut, inpuut, inpuut, inpuut, set);
+                bookLesson.lessonMenu();
                 w=false;
             }else if(set==3){
                 w=false;
